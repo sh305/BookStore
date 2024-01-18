@@ -6,3 +6,4 @@
 /BookStore_Application/.vs/BookStore_Application
 /BookStore_Application/BookStore_Application/bin/Debug/net6.0
 /BookStore_Application/BookStore_Application/obj
+*.user

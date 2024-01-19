@@ -1,4 +1,6 @@
-﻿namespace BookStore_Application
+﻿using Microsoft.Extensions.FileProviders;
+
+namespace BookStore_Application
 {
     public class Startup
     {
@@ -14,6 +16,14 @@
             //{
             //    await context.Response.WriteAsync("Hello From first MiddelWare");
             //    await next();
+            //});
+            app.UseStaticFiles();
+
+            // Use Custom Files
+            //app.UseStaticFiles(new StaticFileOptions()
+            //{
+            //    FileProvider=new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(),"Myfiles")),
+            //    RequestPath= "/Myfiles"
             //});
             app.UseRouting();
             app.UseEndpoints(endpoints =>
